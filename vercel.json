@@ -3,17 +3,16 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/spa"
+      }
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/dist/server/node-build.mjs"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/dist/spa/$1"
+      "dest": "/index.html"
     }
   ]
 }
