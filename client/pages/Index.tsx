@@ -13,11 +13,11 @@ const WeddingHomepage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const galleryImages = [
-    "../public/images/IMG_46.jpg", "../public/images/IMG_1048.jpg", "../public/images/IMG_71.jpg", 
-    "../public/images/IMG_1132.jpg", "../public/images/IMG_87.jpg", "../public/images/IMG_1168.jpg", 
-    "../public/images/IMG_146.jpg", "../public/images/IMG_1193.jpg", "../public/images/IMG_184.jpg", 
-    "../public/images/IMG_1244.jpg", "../public/images/IMG_198.jpg", "../public/images/IMG_1251.jpg", 
-    "../public/images/IMG_286.jpg"];
+    "/images/IMG_46.jpg", "/images/IMG_1048.jpg", "/images/IMG_71.jpg",
+    "/images/IMG_1132.jpg", "/images/IMG_87.jpg", "/images/IMG_1168.jpg", 
+    "/images/IMG_146.jpg", "/images/IMG_1193.jpg", "/images/IMG_184.jpg", 
+    "/images/IMG_1244.jpg", "/images/IMG_198.jpg", "/images/IMG_1251.jpg", 
+    "/images/IMG_286.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,7 +48,7 @@ const handleWhatsAppRSVP = () => {
       <section
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed bg-no-repeat mobile-bg"
         style={{
-          backgroundImage: "url('../public/images/IMG_1163.jpg')",
+          backgroundImage: "url('/images/IMG_1163.jpg')",
           paddingLeft: '200px',
         }}
       >
@@ -56,12 +56,12 @@ const handleWhatsAppRSVP = () => {
           __html: `
             @media (max-width: 640px) {
               .mobile-bg {
-                background-image: url("../public/images/IMG_1173.jpg") !important;
+                background-image: url("/images/IMG_1173.jpg") !important;
               }
                 
             @media (max-width: 1215px) {
               .mobile-bg {
-                background-image: url("../public/images/IMG_1163T.jpg");
+                background-image: url("/images/IMG_1163T.jpg");
                 justify-content: flex-start !important;
                 align-items: stretch !important;
                 padding-left: 0 !important;
@@ -149,7 +149,7 @@ const handleWhatsAppRSVP = () => {
             <div className="w-24 h-1 bg-rose-gold mx-auto mb-6"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative w-full rounded-2xl aspect-[1/1] overflow-hidden mb-6 md:mb-8 lg:mb-10">
-                <img className="absolute inset-0 w-full h-full object-cover" src="../public/images/IMG_168.jpg" alt="Convite" />
+                <img className="absolute inset-0 w-full h-full object-cover" src="/images/IMG_168.jpg" alt="Convite" />
               </div>
               <div className="md:flex md:items-center md:justify-center md:h-full">
                 <p className="text-charcoal font-poppins text-xl max-w-2xl mx-auto md:inline-block md:text-center">
@@ -224,7 +224,7 @@ const handleWhatsAppRSVP = () => {
             <div className="w-24 h-1 bg-rose-gold mx-auto mb-6"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-items-center">
               <div className="relative w-full rounded-2xl aspect-[1/1] overflow-hidden mb-6 md:mb-8 lg:mb-10">
-                <img className="absolute inset-0 w-full h-full object-cover" src="../public/images/IMG_138.jpg" alt="Convite" />
+                <img className="absolute inset-0 w-full h-full object-cover" src="/images/IMG_138.jpg" alt="Convite" />
               </div>
               <div className="flex flex-col items-center">
                 <div className="text-rose-gold text-2xl font-poppins mb-8 md:mb-10">
@@ -288,7 +288,7 @@ const handleWhatsAppRSVP = () => {
             Chave PIX:
           </span>
           <img
-            src="../public/images/qrcode.png"
+            src="/images/qrcode.png"
             alt="QR Code PIX"
             className="w-48 h-48 rounded-lg shadow-lg border border-gray-200"
           />
