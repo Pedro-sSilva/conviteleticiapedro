@@ -208,7 +208,7 @@ const handleWhatsAppRSVP = () => {
               Confirmar Presença
             </button>
             <p className="text-charcoal text-lg font-poppins font-bold">
-              Confirmar sua presença até o dia <span className="text-rose-gold">1 de Novembro</span>.
+              Confirmar a presença até o dia <span className="text-rose-gold">1 de Novembro</span>.
             </p>
           </div>
         </div>
