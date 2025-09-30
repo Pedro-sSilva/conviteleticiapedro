@@ -278,10 +278,10 @@ const handleWhatsAppRSVP = () => {
           Presente
         </h2>
         <p className="text-charcoal font-poppins text-center max-w-2xl mx-auto mb-8">
-          Sua presença já é o melhor presente que poderíamos desejar! Mas, se desejar nos presentear, ficaremos muito felizes em receber uma contribuição via PIX para ajudar a construir nosso novo lar.
+          Sua presença já é o melhor presente que poderíamos desejar! Mas, se desejar nos presentear, ficaremos muito felizes em receber uma contribuição via <b>PIX</b> para ajudar a construir nosso novo lar.
         </p>
         <div className="flex flex-col items-center gap-3">
-          <span className="text-rose-gold text-sm mt-2">
+          <span className="text-rose-gold px-6 text-sm text-center mt-2">
             Copie a chave ou aponte a câmera para o QR Code
           </span>
           <span className="font-poppins text-charcoal mb-2">
