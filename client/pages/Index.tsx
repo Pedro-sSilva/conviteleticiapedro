@@ -28,7 +28,7 @@ const WeddingHomepage = () => {
 
 const handleWhatsAppRSVP = () => {
   const message = "Olá! Gostaria de confirmar minha presença no casamento de Letícia & Pedro!";
-  window.open(`https://wa.me/5519999570216?text=${encodeURIComponent(message)}`);
+  window.open(`https://wa.me/5519999280670?text=${encodeURIComponent(message)}`);
 };
 
   const handleGoogleMaps = () => {
