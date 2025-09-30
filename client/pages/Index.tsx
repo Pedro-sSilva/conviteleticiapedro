@@ -273,7 +273,7 @@ const handleWhatsAppRSVP = () => {
 
       
       {/* Presente */}
-      <section className="py-20 bg-cream min-h-screen flex flex-col items-center justify-center">
+      <section className="py-20 px-6 bg-cream min-h-screen flex flex-col items-center justify-center">
         <h2 className="font-playfair text-5xl text-charcoal mb-4 text-center mb-8 md:mb-10 ">
           Presente
         </h2>
@@ -308,7 +308,7 @@ const handleWhatsAppRSVP = () => {
       <div className="fixed bottom-6 right-6 z-50">
         <button
           onClick={handleWhatsAppRSVP}
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110"
+          className="bg-green-500 border border-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110"
         >
           <MessageCircle size={24} />
         </button>

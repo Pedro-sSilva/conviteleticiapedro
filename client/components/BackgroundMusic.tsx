@@ -67,14 +67,14 @@ const BackgroundMusic = () => {
 
       <button
         onClick={toggleMusic}
-        className={`fixed bottom-6 left-6 z-50 backdrop-blur-sm border rounded-full p-3 transition-all duration-1000 ${
+        className={`fixed bottom-6 left-6 z-50 backdrop-blur-sm border rounded-full p-4 transition-all duration-1000 ${
           isPlaying
             ? "bg-rose-gold/30 border-rose-gold/50 text-white animate-pulse"
             : "bg-white/30 border-white/50 text-rose-gold hover:bg-rose-gold/20 hover:border-rose-gold/30"
         }`}
         title={isPlaying ? "Pausar música" : "Tocar música"}
       >
-        {isPlaying ? <Music size={20} /> : <VolumeX size={20} />}
+        {isPlaying ? <Music size={24} /> : <VolumeX size={24} />}
       </button>
     </>
   );
