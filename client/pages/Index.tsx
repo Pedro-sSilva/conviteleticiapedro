@@ -250,12 +250,11 @@ const handleWhatsAppRSVP = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className="relative group overflow-hidden rounded-2xl cursor-pointer transform transition-all duration-500 hover:scale-105"
-                style={{ aspectRatio: 'auto' }} // Adiciona proporção automática
+                className="relative group overflow-hidden rounded-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 break-inside-avoid mb-6"
               >
                 <img
                   src={image}
@@ -273,18 +272,18 @@ const handleWhatsAppRSVP = () => {
 
       
       {/* Presente */}
-      <section className="py-20 px-6 bg-cream min-h-screen flex flex-col items-center justify-center">
-        <h2 className="font-playfair text-5xl text-charcoal mb-4 text-center mb-8 md:mb-10 ">
+      <section className="py-24 px-6 bg-cream min-h-screen flex flex-col items-center justify-center">
+        <h2 className="font-playfair text-5xl text-charcoal mb-12 text-center md:mb-16">
           Presente
         </h2>
-        <p className="text-charcoal font-poppins text-center max-w-2xl mx-auto mb-8">
+        <p className="text-charcoal font-poppins text-center max-w-2xl mx-auto mb-12">
           Sua presença já é o melhor presente que poderíamos desejar! Mas, se desejar nos presentear, ficaremos muito felizes em receber uma contribuição via <b>PIX</b> para ajudar a construir nosso novo lar.
         </p>
-        <div className="flex flex-col items-center gap-3">
-          <span className="text-rose-gold px-6 text-sm text-center mt-2">
+        <div className="flex flex-col items-center gap-6">
+          <span className="text-rose-gold px-6 text-sm text-center">
             Copie a chave ou aponte a câmera para o QR Code
           </span>
-          <span className="font-poppins text-charcoal mb-2">
+          <span className="font-poppins text-charcoal">
             Chave PIX:
           </span>
           <img
@@ -296,7 +295,7 @@ const handleWhatsAppRSVP = () => {
             onClick={() => {
               navigator.clipboard.writeText("00020126360014BR.GOV.BCB.PIX0114+55199995702165204000053039865802BR5901N6001C62120508Presente63045B66");
             }}
-            className="bg-rose-gold hover:bg-rose-gold/90 text-white px-8 py-4 rounded-full font-poppins font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto"
+            className="bg-rose-gold hover:bg-rose-gold/90 text-white px-8 py-4 rounded-full font-poppins font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto mt-2"
           >
             <Copy size={24} />
             Copiar

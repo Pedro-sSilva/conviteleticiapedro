@@ -7,7 +7,7 @@ const BackgroundMusic = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // Free wedding music URL (you can replace with your preferred track)
-  const musicUrl = "/SparksColdplay.mp3";
+  const musicUrl = "/Spring.mp3";
 
   useEffect(() => {
     const audio = audioRef.current;
