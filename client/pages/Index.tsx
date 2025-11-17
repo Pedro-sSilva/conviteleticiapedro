@@ -287,13 +287,13 @@ const handleWhatsAppRSVP = () => {
             Chave PIX:
           </span>
           <img
-            src="/images/qrcode.png"
+            src="/images/qrcode-pix.png"
             alt="QR Code PIX"
             className="w-48 h-48 rounded-lg shadow-lg border border-gray-200"
           />
           <button
             onClick={() => {
-              navigator.clipboard.writeText("00020126360014BR.GOV.BCB.PIX0114+55199995702165204000053039865802BR5901N6001C62120508Presente63045B66");
+              navigator.clipboard.writeText("00020126360014BR.GOV.BCB.PIX0114+55199995702165204000053039865802BR5901N6001C62070503***6304F1D0");
             }}
             className="bg-rose-gold hover:bg-rose-gold/90 text-white px-8 py-4 rounded-full font-poppins font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto mt-2"
           >
