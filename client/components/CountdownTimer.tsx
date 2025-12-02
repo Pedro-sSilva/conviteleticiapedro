@@ -6,6 +6,7 @@ interface CountdownTimerProps {
 
 const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(targetDate));
+  const isPast = targetDate.getTime() < new Date().getTime();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -17,6 +18,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
 
   function calculateTimeLeft(targetDate: Date) {
     const difference = targetDate.getTime() - new Date().getTime();
+    const absoluteDifference = Math.abs(difference);
 
     if (difference > 0) {
       return {
@@ -27,7 +29,12 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
       };
     }
 
-    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    return {
+      days: Math.floor(absoluteDifference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((absoluteDifference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((absoluteDifference / (1000 * 60)) % 60),
+      seconds: Math.floor((absoluteDifference / 1000) % 60),
+    };
   }
 
   return (
